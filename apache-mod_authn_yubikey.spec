@@ -6,7 +6,7 @@
 Summary:	Authentication provider for Yubicos YubiKey
 Name:		apache-%{mod_name}
 Version:	0.1
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Group:		System/Servers
 License:	Apache License
 URL:		http://mod_authn_yubikey.coffeecrew.org/
@@ -72,4 +72,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %attr(0644,root,root) %config(noreplace) %{_sysconfdir}/httpd/modules.d/%{mod_conf}
 %attr(0755,root,root) %{_libdir}/apache-extramodules/%{mod_so}
-
