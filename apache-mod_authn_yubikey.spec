@@ -20,7 +20,7 @@ Requires:	apache-conf >= 2.2.0
 Requires:	apache >= 2.2.0
 BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	curl-devel
-BuildRequires:	libyubikey-client-devel
+BuildRequires:	libyubikey-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -42,7 +42,7 @@ conjunction with an additional password, where TwoFactor would be sent instead.
 cp %{SOURCE1} %{mod_conf}
 
 %build
-%{_sbindir}/apxs -c %{mod_name}.c -lyubikey-client
+%{_sbindir}/apxs -c %{mod_name}.c -Wl,-lcurl -Wl,-lyubikey
 
 %install
 rm -rf %{buildroot}
