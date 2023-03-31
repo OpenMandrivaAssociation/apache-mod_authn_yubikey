@@ -6,7 +6,7 @@
 Summary:	Authentication provider for Yubicos YubiKey
 Name:		apache-%{mod_name}
 Version:	0.1
-Release: 	20
+Release: 	21
 Group:		System/Servers
 License:	Apache License
 URL:		http://mod_authn_yubikey.coffeecrew.org/
