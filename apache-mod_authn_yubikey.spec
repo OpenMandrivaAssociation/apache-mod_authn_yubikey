@@ -9,7 +9,7 @@ Version:	0.1
 Release: 	21
 Group:		System/Servers
 License:	Apache License
-URL:		http://mod_authn_yubikey.coffeecrew.org/
+URL:		https://mod_authn_yubikey.coffeecrew.org/
 Source0:	http://mod_authn_yubikey.coffeecrew.org/authn_yubikey.tar.bz2
 Source1:	%{mod_conf}
 Requires(pre): rpm-helper
